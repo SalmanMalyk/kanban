@@ -15,7 +15,7 @@ class CardFactory extends Factory
     {
         return [
             'title' => $this->faker->words(3, true),
-            'content' => $this->faker->realText(200),
+            'content' => $this->faker->realText(100),
             'column_id' => Column::factory()->create(),
         ];
     }
